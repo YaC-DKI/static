@@ -41,7 +41,31 @@ const aLinkList = document.getElementsByClassName("a-link");
 Array.from(aLinkList).forEach((v) => {
     v.addEventListener("click", function(e){
         e.preventDefault()
-        // console.log(e.target.getAttribute("href"));
-        window.location = e.target.getAttribute("href")
+
+        toggleGordeng();
+        setTimeout(() => {
+            window.location = e.target.getAttribute("href")
+        }, 1900)
     })
 })
+
+
+
+// gordeng
+
+const gordeng = document.getElementById("gordeng");
+const gordengH1 = document.getElementById("gordengText");
+
+function toggleGordeng(isInit=false){
+    if(isInit){
+        setTimeout(()=>{
+            gordengH1.style = "opacity: 0; transition: 1.8s;"
+            gordeng.style = "height:0px !important; transition: 1.6s;"
+        }, 1000)
+    }else{
+        gordeng.style = "height:100% !important; transition: 1.6s;"
+        gordengH1.style = "opacity: 1; transition: 1.8s;"
+    }
+}
+
+toggleGordeng(true);

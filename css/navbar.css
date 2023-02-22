@@ -54,6 +54,12 @@
     background: var(--orange);
 }
 
+
+/* gordeng */
+#gordeng{
+    z-index: 10000;
+}
+
 /* main */
 .nav{
     width: 100vw;
