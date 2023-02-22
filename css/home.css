@@ -1,0 +1,40 @@
+/* greet */
+
+.greet{
+    height: 100vh;
+    max-height: 768px;
+}
+
+.greetText{
+    height: 768px;
+}
+
+.carousel-inner div img, #CarouselGreet{
+    max-height: 768px !important;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.darken{
+    opacity: .7;
+}
+
+#greet-content{
+    left: 0% !important;
+    right: 0% !important;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#greet_t{
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+#greet_tc{
+    position: relative !important;
+    bottom: 10px;
+}
+
+/* greetings */

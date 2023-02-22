@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --black: #132131;
+    --white : #F6F6FB;
+    --orange : #FDAD54;
+    --bold-white : #F1F1F1;
+    --bold-orange :#DFA01E;
+    --dark-orange : #F95C3E;
+    --light-black: #19293b;
+    --light-orange: #ffd9ad;
+    --green :#33D795; 
+    --blue : #35a1ff;
+    --red: #f96c67;
+}
+
+/* color-related */
+.cs-black{
+    color: var(--black) !important;
+}
+.cs-white{
+    color: var(--white) !important;
+}
+.cs-orange{
+    color: var(--orange) !important;
+}
+.cs-bold-white{
+    color: var(--bold-white) !important;
+}
+.cs-bold-orange{
+    color: var(--bold-orange) !important;
+}
+.cs-dark-orange{
+    color: var(--dark-orange) !important;
+}
+.cs-light-black{
+    color: var(--light-black) !important;
+}
+.cs-light-orange{
+    color: var(--light-orange) !important;
+}
+.cs-green{
+    color: var(--green) !important;
+}
+.cs-blue{
+    color: var(--blue) !important;
+}
+.cs-red{
+    color: var(--red) !important;
+}
+
+/* background-related */
+
+.bs-black{
+    background-color: var(--black);
+}
+.bs-white{
+    background-color: var(--white);
+}
+.bs-orange{
+    background-color: var(--orange);
+}
+.bs-bold-white{
+    background-color: var(--bold-white);
+}
+.bs-bold-orange{
+    background-color: var(--bold-orange);
+}
+.bs-dark-orange{
+    background-color: var(--dark-orange);
+}
+.bs-light-black{
+    background-color: var(--light-black);
+}
+.bs-light-orange{
+    background-color: var(--light-orange);
+}
+.bs-green{
+    background-color: var(--green);
+}
+.bs-blue{
+    background-color: var(--blue);
+}
+.bs-red{
+    background-color: var(--red);
+}
+
+
+/* fonts */
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.pop-400 {
+    font-weight: 400;
+}
+.pop-500 {
+    font-weight: 500;
+}
+.pop-600 {
+    font-weight: 600;
+}
+.pop-700 {
+    font-weight: 700;
+}
+
+.bebas {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* global */
+
+.pointer{
+    cursor: pointer;
+}
+
+html, body{
+    background-color: var(--white);
+}
+
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--white);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 6px;
+  }

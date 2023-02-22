@@ -1,0 +1,115 @@
+/* misc */
+
+@keyframes breath {
+    0% {
+        left: 0px;   
+    }
+    50%{
+        width: 100%;
+    }
+    100% {
+        right: 0px;
+    }
+
+}
+
+.breath{
+    animation: breath .8s ease-in-out infinite both;
+    height: 3px;
+    width: 10px;
+    transition: .3s;
+    display: block;
+    background: var(--orange);
+    position: absolute;
+
+}
+.hovered {
+    position: relative;
+    transition: .5s;
+  }
+  .hovered:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: var(--orange);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .hovered:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.current{
+    position: relative;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: var(--orange);
+}
+
+/* main */
+.nav{
+    width: 100vw;
+    max-width: 100%;
+}
+
+#nav_main{
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+}
+.g-content{
+    font-size: 1.3em !important;
+    text-decoration: none;
+}
+
+#left, #right{
+    width: 150px;
+}
+
+#center, #right, #left{
+    gap: 10px;
+}
+
+
+.nav_expander{
+    height: 100%;
+    gap: 2em;
+    font-size: 1.3em;
+    transition: .3s;
+    overflow: hidden;
+    width: 0px;
+}
+
+#tl{
+    clip-path: circle(26.9% at 94% 8%);
+}
+#br{
+    clip-path: circle(26.9% at 1% 99%);
+}
+
+#cross {
+    display: none;
+}
+
+@media screen and (min-width: 536px) {
+    #toggle_extend{
+        display: none !important;
+    }
+    .nav_expander{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    #center{
+        display: none !important;
+    }
+}
