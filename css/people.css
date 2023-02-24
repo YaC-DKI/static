@@ -2,10 +2,12 @@
     width: 100%;
     height: 90vh;
     min-height: 400px;
-    background: url("https://firebasestorage.googleapis.com/v0/b/smart-school-300211.appspot.com/o/1613723802635-bg-slider-1.png?alt=media&token=c13539cb-c2b9-4b87-9b2a-61daa8826020");
+    background: url("../Assets/People/Landing.png");
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
+    background-position: 45%;
+    border-bottom: 10px solid var(--black);
 }
 
 #greet-p .darken{
@@ -36,8 +38,8 @@
 }
 
 .people-card{
-    min-height: 400px;
-    max-width: 260px;
+    min-height: 340px;
+    max-width: 220px;
     width: 100%;
 }
 
@@ -99,5 +101,31 @@
 
     #teacher-wrapper h2{
         font-size: 2em;
+    }
+}
+
+/* student */
+.student{
+    min-height: 400px;
+}
+
+.s-content{
+    max-width: 430px;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    #student-wrap{
+        padding: 8px !important;
+    }
+    .student{
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        text-align: center !important;
+    }
+
+    .student .d-flex{
+        justify-content: center;
     }
 }

@@ -42,7 +42,7 @@ Array.from(aLinkList).forEach((v) => {
     v.addEventListener("click", function(e){
         e.preventDefault()
 
-        toggleGordeng();
+        // toggleGordeng();
         setTimeout(() => {
             window.location = e.target.getAttribute("href")
         }, 1900)
