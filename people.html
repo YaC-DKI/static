@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/people.css">
 </head>
 <body>
 
@@ -27,10 +28,10 @@
             </div>
 
             <div class="d-flex align-items-center" id="center">
-                <a id="home" class="a-link poppins m-0 pop-600 cs-white g-content" href="index.html">
+                <a id="home" class="a-link poppins m-0 pop-600 cs-white g-content hovered" href="index.html">
                     Home
                 </a>
-                <a id="people" class="a-link poppins m-0 pop-600 cs-white g-content hovered" href="people.html">
+                <a id="people" class="a-link poppins m-0 pop-600 cs-white g-content" href="people.html">
                     People
                     <span class="current"></span>
                 </a>
@@ -76,12 +77,74 @@
         </div>
 
     </nav>
+    
+    <main class="pt-0">
+        
+        <section class="w-100">
+            <div class="w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden" id="greet-p">
+                <div class="w-100 h-100 bs-black position-absolute darken">
 
-    <section>
+                </div>
+                <h1 class="poppins cs-white bold text-center">
+                    Ayo Kenal Jurusan Kami <br>
+                    Lebih Mendalam
+                </h1>
 
-        asdasdasd
+            </div>
+        </section>
 
-    </section>
+        <section class="hero d-flex justify-content-center align-items-center position-relative overflow-hidden" id="people">
+
+            <div class="position-absolute decor-blue"></div>
+            <div class="position-absolute decor-orange"></div>
+
+            <div class="container-md position-relative z-1" id="teacher-wrapper">
+                <h2 class="poppins bold cs-black text-center">Tenaga Pendidik</h2>
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 flex-wrap" style="gap: 20px;">
+
+                    <div class="people-card p-3 pt-5 d-flex position-relative  flex-column justify-content-between">
+                        <div class="pc-name bs-orange p-2 poppins d-flex justify-content-center align-items-center cs-white fs-5 rounded position-relative text-center">
+                            Kuriasih S.E, S.KOM
+                            <div class="arrow-down position-absolute"></div>
+                        </div>
+
+                        <img src="Assets/People/guru/Kuriasih.png" alt="" class="align-self-end" id="p-img-teacher">
+                    </div>
+
+                    <div class="people-card p-3 pt-5 d-flex position-relative  flex-column justify-content-between">
+                        <div class="pc-name bs-orange p-2 poppins d-flex justify-content-center align-items-center cs-white fs-5 rounded position-relative text-center">
+                            Drs. H. Sutaryo
+                            <div class="arrow-down position-absolute"></div>
+                        </div>
+
+                        <img src="Assets/People/guru/sutaryo.png" alt="" class="align-self-end" id="p-img-teacher">
+                    </div>
+
+                    <div class="people-card p-3 pt-5 d-flex position-relative  flex-column justify-content-between">
+                        <div class="pc-name bs-orange p-2 poppins d-flex justify-content-center align-items-center cs-white fs-5 rounded position-relative text-center">
+                            Danial Ahadian R., M.P.D
+                            <div class="arrow-down position-absolute"></div>
+                        </div>
+
+                        <img src="Assets/People/guru/danial.png" alt="" class="align-self-end" id="p-img-teacher">
+                    </div>
+
+                    <div class="people-card p-3 pt-5 d-flex position-relative  flex-column justify-content-between">
+                        <div class="pc-name bs-orange p-2 poppins d-flex justify-content-center align-items-center cs-white fs-5 rounded position-relative text-center">
+                            Purwanto M. KOM
+                            <div class="arrow-down position-absolute"></div>
+                        </div>
+
+                        <img src="Assets/People/guru/purwanto.png" alt="" class="align-self-end" id="p-img-teacher">
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 
     <script src="js/navbar.js"></script>
     <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>

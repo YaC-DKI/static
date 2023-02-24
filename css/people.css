@@ -1,0 +1,103 @@
+#greet-p{
+    width: 100%;
+    height: 90vh;
+    min-height: 400px;
+    background: url("https://firebasestorage.googleapis.com/v0/b/smart-school-300211.appspot.com/o/1613723802635-bg-slider-1.png?alt=media&token=c13539cb-c2b9-4b87-9b2a-61daa8826020");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#greet-p .darken{
+    opacity: .6;
+}
+
+#greet-p h1{
+    z-index: 2;
+}
+
+.decor-image{
+    width: 100%;
+    height: 45px;
+    bottom: 0px;
+}
+
+.decor-image div{
+    height: 100%;
+    background: var(--white);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+#d1 {
+    border-top-left-radius: 0px !important;
+}
+#d4 {
+    border-top-right-radius: 0px !important;
+}
+
+.people-card{
+    min-height: 400px;
+    max-width: 260px;
+    width: 100%;
+}
+
+.pc-name{
+    min-height: 60px;
+    font-weight: 600;
+    max-width: 260px !important;
+    top: 120px;
+    transition: .2s;
+    opacity: 0;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    bottom: -20px;
+    border-top: 20px solid var(--orange);
+}
+
+#p-img-teacher{
+    transition: .4s;
+    z-index: 1;
+    width: 100%;
+}
+
+.people-card:hover #p-img-teacher{
+    transition: .4s;
+    transform: scale(1.05);
+}
+
+.people-card:hover > .pc-name{
+    top: -40px;
+    transition: .2s;
+    opacity: 1;
+}
+
+.decor-blue{
+    left: 0px;
+    bottom: 0px;
+    box-shadow: 300px -120px 900px 350px rgba(53,161,252,0.47);
+    -webkit-box-shadow: 300px -120px 900px 350px rgba(53,161,252,0.47);
+    -moz-box-shadow: 300px -120px 900px 350px rgba(53,161,252,0.47);
+}
+
+.decor-orange {
+    right: 0px;
+    top: 0px;
+    box-shadow: -300px 120px 900px 350px rgba(233,160,30,0.47);
+    -webkit-box-shadow: -300px 120px 900px 350px rgba(233,160,30,0.47);
+    -moz-box-shadow: -300px 120px 900px 350px rgba(233,160,30,0.47);
+}
+
+@media screen and (max-width: 1200px) {
+    #teacher-wrapper{
+        padding-top: 40px;
+    }
+
+    #teacher-wrapper h2{
+        font-size: 2em;
+    }
+}
