@@ -14,6 +14,12 @@
     --red: #f96c67;
 }
 
+.hero{
+    min-height: 768px;
+    width: 100%;
+
+}
+
 /* color-related */
 .cs-black{
     color: var(--black) !important;
