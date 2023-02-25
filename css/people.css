@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
-    background-position: 45%;
+    background-position: 54%;
     border-bottom: 10px solid var(--black);
 }
 
@@ -81,17 +81,17 @@
 .decor-blue{
     left: 0px;
     bottom: 0px;
-    box-shadow: 300px -120px 900px 350px rgba(53,161,252,0.47);
-    -webkit-box-shadow: 300px -120px 900px 350px rgba(53,161,252,0.47);
-    -moz-box-shadow: 300px -120px 900px 350px rgba(53,161,252,0.47);
+    box-shadow: 300px -120px 300px 350px rgba(53,161,252,0.21);
+    -webkit-box-shadow: 300px -120px 300px 350px rgba(53,161,252,0.21);
+    -moz-box-shadow: 300px -120px 300px 350px rgba(53,161,252,0.21);
 }
 
 .decor-orange {
     right: 0px;
     top: 0px;
-    box-shadow: -300px 120px 900px 350px rgba(233,160,30,0.47);
-    -webkit-box-shadow: -300px 120px 900px 350px rgba(233,160,30,0.47);
-    -moz-box-shadow: -300px 120px 900px 350px rgba(233,160,30,0.47);
+    box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
+    -webkit-box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
+    -moz-box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
 }
 
 @media screen and (max-width: 1200px) {
