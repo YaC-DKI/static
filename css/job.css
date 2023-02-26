@@ -40,3 +40,26 @@
     background-size: cover;
     background-position: center;
 }
+
+.documentation{
+    /* background: blue; */
+    height: 240px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.documentation div{
+    background: #132131a3;
+}
+
+.documentation:hover .op-0-transit{
+    opacity: 1;
+    transition: .2s;
+}
+
+.op-0-transit{
+    opacity: 0;
+    transition: .2s;
+}
