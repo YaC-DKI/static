@@ -26,8 +26,7 @@ function expander(){
     }
 }
 
-window.addEventListener("scroll", () => {
-    console.log(navbar.classList.contains("custom"));
+function navbar_status(){
     if(!navbar.classList.contains("solid-color") ){
         if(!navbar.classList.contains("custom")){
             if(window.pageYOffset > document.getElementById("greetings").getBoundingClientRect().bottom && navbar.classList.contains("bs-black") === false){
@@ -37,6 +36,12 @@ window.addEventListener("scroll", () => {
             }
         }
     }
+}
+
+navbar_status()
+
+window.addEventListener("scroll", () => {
+    navbar_status()
 })
 
 const aLinkList = document.getElementsByClassName("a-link");
@@ -45,7 +50,7 @@ Array.from(aLinkList).forEach((v) => {
     v.addEventListener("click", function(e){
         e.preventDefault()
 
-        // toggleGordeng();
+        toggleGordeng();
         setTimeout(() => {
             window.location = e.target.getAttribute("href")
         }, 1900)
@@ -61,9 +66,11 @@ const gordengH1 = document.getElementById("gordengText");
 
 function toggleGordeng(isInit=false){
     if(isInit){
+        document.querySelector("body").style = "overflow-y: hidden;"
         setTimeout(()=>{
             gordengH1.style = "opacity: 0; transition: 1.8s;"
             gordeng.style = "height:0px !important; transition: 1.6s;"
+            document.querySelector("body").style = "overflow-y: auto;"
         }, 1000)
     }else{
         gordeng.style = "height:100% !important; transition: 1.6s;"
