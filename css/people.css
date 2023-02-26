@@ -77,22 +77,6 @@
     opacity: 1;
 }
 
-.decor-blue{
-    left: 0px;
-    bottom: 0px;
-    box-shadow: 300px -120px 300px 350px rgba(53,161,252,0.21);
-    -webkit-box-shadow: 300px -120px 300px 350px rgba(53,161,252,0.21);
-    -moz-box-shadow: 300px -120px 300px 350px rgba(53,161,252,0.21);
-}
-
-.decor-orange {
-    right: 0px;
-    top: 0px;
-    box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
-    -webkit-box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
-    -moz-box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
-}
-
 @media screen and (max-width: 1200px) {
     #teacher-wrapper{
         padding-top: 40px;

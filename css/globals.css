@@ -20,6 +20,19 @@
 
 }
 
+.decor-blue{
+    box-shadow: 300px -120px 300px 350px rgba(53,161,252,0.21);
+    -webkit-box-shadow: 300px -120px 300px 350px rgba(53,161,252,0.21);
+    -moz-box-shadow: 300px -120px 300px 350px rgba(53,161,252,0.21);
+}
+
+.decor-orange {
+    box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
+    -webkit-box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
+    -moz-box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
+}
+
+
 /* color-related */
 .cs-black{
     color: var(--black) !important;
