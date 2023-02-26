@@ -27,11 +27,14 @@ function expander(){
 }
 
 window.addEventListener("scroll", () => {
-    if(!navbar.classList.contains("solid-color")){
-        if(window.pageYOffset > document.getElementById("greetings").getBoundingClientRect().bottom && navbar.classList.contains("bs-black") === false){
-            navbar.classList.add("bs-black")
-        }else if(window.pageYOffset < document.getElementById("greetings").getBoundingClientRect().bottom && navbar.classList.contains("bs-black")){
-            navbar.classList.remove("bs-black")
+    console.log(navbar.classList.contains("custom"));
+    if(!navbar.classList.contains("solid-color") ){
+        if(!navbar.classList.contains("custom")){
+            if(window.pageYOffset > document.getElementById("greetings").getBoundingClientRect().bottom && navbar.classList.contains("bs-black") === false){
+                navbar.classList.add("bs-black")
+            }else if(window.pageYOffset < document.getElementById("greetings").getBoundingClientRect().bottom && navbar.classList.contains("bs-black")){
+                navbar.classList.remove("bs-black")
+            }
         }
     }
 })
