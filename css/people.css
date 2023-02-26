@@ -7,7 +7,6 @@
     object-fit: cover;
     background-size: cover;
     background-position: 54%;
-    border-bottom: 10px solid var(--black);
 }
 
 #greet-p .darken{
