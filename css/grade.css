@@ -1,0 +1,124 @@
+.underlined{
+    text-decoration: underline var(--orange);
+}
+
+
+.opening{
+    min-height: 450px;
+}
+
+.s-content{
+    max-width: 50%;
+}
+
+@media screen and (max-width: 930px) {
+    #opening-wrap{
+        flex-direction: column-reverse !important;
+        align-items: center;
+    }
+    
+    .s-content{
+        text-align: center;
+        max-width: 95% !important;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #kelas{
+        font-size: 2rem !important;
+    }
+
+    #description{
+        font-size: 1rem !important;
+    }
+   
+    
+}
+
+.s-card{
+    max-width: 280px;
+    width: 280px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    border-bottom: 5px solid var(--orange);
+}
+
+.s-card:hover{
+    transition: .1s;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+#name{
+    width: 90px;
+    height: 90px;
+    top: 10px;
+    border: 4px solid var(--white);
+}
+
+.fulname h3{
+    margin-top: 30px;
+}
+
+#blue{
+    position: fixed;
+    top: 0px;
+    background: url("../Assets/Job/decor_p.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 54%;
+}
+
+.selectedField {
+    border-bottom: 3px solid var(--black);
+}
+
+.userpost{
+    min-height: 140px;
+    gap: 10px;
+}
+
+.modal-content{
+    /* border: 4px solid var(--light-black); */
+}
+
+
+.card-post{
+    min-height: 40px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+
+.cp-left{
+    min-width: 100px;
+    background: var(--black);
+    min-height: 100px;
+}
+
+.cp-right{
+    width: 100%;
+    background: var(--white);
+}
+
+.cp-right h4{
+    text-decoration: underline var(--orange);
+}
+.cp-right .desc{
+    font-weight: 600;
+    font-size: .89em;
+    color: #132131b1;
+}
+
+.cp-right a{
+    text-decoration: underline var(--orange);
+}
+
+.decoration-left{
+    top: 0px;
+    clip-path: circle(28.7% at 8% 95%);
+}
+
+/* .bc{
+    top: 10px;
+    left: 0px;
+} */

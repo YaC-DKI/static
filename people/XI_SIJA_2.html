@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="../css/home.css">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/grade.css">
+
+    <script src="../jquery/jquery.js"></script>
+    <script src="../data/XI_SIJA_2.js"></script>
+
+    <link rel="stylesheet" href="../aos/aos.css">
+    <script src="../aos/aos.js"></script>
 </head>
 <body>
-
+    <script>AOS.init();</script>
     <div class="w-100 h-100 fixed-top bs-black d-flex justify-content-center align-items-center overflow-hidden" style="z-index: 1031 !important;" id="gordeng">
         <h1 class="poppins bold m-0 cs-white g-content fs-1 position-relative" id="gordengText" >
             Detail<span class="cs-orange p-0 m-0">KU</span>
@@ -19,7 +26,7 @@
             <div class="breath"></div>
         </h1>
     </div>
-    <nav class="nav fixed-top" id="nav">
+    <nav class="nav fixed-top solid-color bs-black" id="nav">
         <div class="d-flex justify-content-between p-2" id="nav_main">
             <div class="d-flex align-items-center" id="left">
                 <a class="poppins bold m-0 cs-white g-content hovered" href="index.html">
@@ -28,20 +35,20 @@
             </div>
 
             <div class="d-flex align-items-center" id="center">
-                <a id="home" class="a-link poppins m-0 pop-600 cs-white g-content" href="index.html">
+                <a id="home" class="a-link poppins m-0 pop-600 cs-white g-content hovered" href="../index.html">
                     Home
+                </a>
+                <a id="people" class="a-link poppins m-0 pop-600 cs-white g-content" href="../people.html">
+                    People
                     <span class="current"></span>
                 </a>
-                <a id="people" class="a-link poppins m-0 pop-600 cs-white g-content hovered" href="people.html">
-                    People
-                </a>
-                <a id="job" class="a-link poppins m-0 pop-600 cs-white g-content hovered" href="job.html">
+                <a id="job" class="a-link poppins m-0 pop-600 cs-white g-content hovered" href="../job.html">
                     Job
                 </a>
             </div>
 
             <div class="d-flex align-items-center g-content justify-content-end" id="right">
-                <img src="Assets/26_logo.png" alt="logo" width="30">
+                <img src="../Assets/26_logo.png" alt="logo" width="30">
                 
                 <div class="d-flex h-100 align-items-center position-relative z-3 pointer" id="toggle_extend" onclick="expander()">
                     <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list d-block" viewBox="0 0 16 16">
@@ -58,14 +65,14 @@
         <div class="nav_expander fixed-top bs-black d-flex flex-column justify-content-center align-items-center z-1" id="expand">
             <div class="ne_decor w-100 h-100 position-absolute bs-light-black" id="tl"></div>
             <div class="ne_decor w-100 h-100 position-absolute bs-light-black" id="br"></div>
-            <a class="a-link poppins m-0 pop-600 cs-white g-content z-1" href="index.html">
+            <a class="a-link poppins m-0 pop-600 cs-white g-content z-1 hovered" href="../index.html">
                 Home
+            </a>
+            <a class="a-link poppins m-0 pop-600 cs-white g-content z-1" href="../people.html">
+                People
                 <span class="current"></span>
             </a>
-            <a class="a-link poppins m-0 pop-600 cs-white g-content z-1 hovered" href="people.html">
-                People
-            </a>
-            <a class="a-link poppins m-0 pop-600 cs-white g-content z-1 hovered" href="job.html">
+            <a class="a-link poppins m-0 pop-600 cs-white g-content z-1 hovered" href="../job.html">
                 Job
             </a>
         </div>
@@ -73,62 +80,130 @@
     </nav>
 
 
-    <main class="pt-o">
-        <section class="greetings" id="greetings">
-            
-            <div id="CarouselGreet" class="carousel slide" data-bs-ride="carousel">
+    <main class="pt-0 bs-white position-relative" style="padding-top: 90px;">
+        <div class="w-100 h-100" id="blue">
 
-                <div class="darken position-absolute z-1 w-100 bs-black w-100 h-100"></div>
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#CarouselGreet" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#CarouselGreet" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#CarouselGreet" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <section class="p-0 position-relative overflow-hidden bs-black opening">
+            <div class="decoration-left position-absolute bs-light-black w-100 h-100"></div>
+            <div class="container-xl p-3 mt-5 py-5 position-relative z-1 d-flex justify-content-evenly" style="gap: 30px;" id="opening-wrap">
+                
+                <div class="s-content bss-blue poppins" id="c-text">
+                    <h2 class="bold cs-light-orange fs-1 " id="kelas">
+                        XI SIJA 1
+                    </h2>
+                    <p style="font-weight: 300;" class="pt-2 fs-4 cs-white" id="description">
+                        Kelas dengan perwalian yang dibimbing oleh <span class="bold underlined" >Purwanto, M.Kom</span> dengan jumlah siswa sebannyak 33 murid. Pada Tahap ini murid diberi materi tingkat lanjut dalam topik pemrograman, desain, jaringan, ataupun komputer secara general
+                    </p>
                 </div>
 
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="Assets/Home/Gedung.jpg" class="d-block w-100" alt="...">
-
-                    <div class="p-4 carousel-caption h-100 d-flex justify-content-end align-items-start flex-column z-1" id="greet-content">
-                        <h1 class="cs-light-orange bebas p-0 m-0" id="greet_t">Belajar</h1>
-                        <p class="p-0 m-0" id="greet_tc">
-                            Persiapkan Semua Dengan Mempelajari Banyak Hal
-                        </p>
-                    </div>
-
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/smart-school-300211.appspot.com/o/1613723802635-bg-slider-1.png?alt=media&token=c13539cb-c2b9-4b87-9b2a-61daa8826020" class="d-block w-100" alt="...">
-
-                    <div class="p-4 carousel-caption h-100 d-flex justify-content-end align-items-start flex-column z-1" id="greet-content">
-                        <h1 class="cs-light-orange bebas p-0 m-0" id="greet_t">Bekerja</h1>
-                        <p class="p-0 m-0" id="greet_tc">
-                            Kerjakan Apa yang Ada Dengan Maksimal
-                        </p>
-                    </div>
-
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Assets/Home/Gedung.jpg" class="d-block w-100" alt="...">
-
-                    <div class="p-4 carousel-caption h-100 d-flex justify-content-end align-items-start flex-column z-1" id="greet-content">
-                        <h1 class="cs-light-orange bebas p-0 m-0" id="greet_t">Membangun</h1>
-                        <p class="p-0 m-0" id="greet_tc">
-                            Implementasikan Semua Demi Memajukan Bangsa dan Negara
-                        </p>
-                    </div>
-
-                  </div>
+                <div class="s-content">
+                    <img src="../Assets/grade/XI_SIJA_2.png" alt="" class="w-100">
                 </div>
+
             </div>
-
         </section>
 
-        <section class="greetings" >
-            
+        <section class="hero p-5 position-relative overflow-hidden">
+            <div class="container-xl p-3 mt-4 position-relative z-1 d-flex justify-content-center flex-wrap" style="gap: 30px;" id="card-wrapper">
+                
+
+            </div>
         </section>
     </main>
+
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-body px-0 pb-3 pt-0">
+                <div class="d-flex justify-content-center align-items-center w-100 py-2 position-relative">
+                    <div class="position-absolute w-100 bs-black" style="height: 60%; top: 0px;"></div>
+                    <div class="rounded-circle bs-light-orange d-flex cs-black justify-content-center align-items-center mt-0 z-1"  id="name" style="border: 4px solid var(--black);">
+                        <h3 class="cs-black poppins bold p-0 m-0">
+                            AW
+                        </h3>
+                    </div>
+                </div>
+
+                <h2 class="text-center mt-3 poppins cs-black bold mb-0 px-3" id="u_name">
+                    
+                </h2>
+
+                <p class="text-center poppins mt-2 cs-black" id="u_uname">
+                    
+                </p>
+
+                <p class="text-center poppins mt-2 cs-black px-5" id="u_desc">
+                    tidak semua dapat dimengerti, namun semua pasti punya arti
+                </p>
+
+                <div class="w-100 p-2 d-flex justify-content-evenly">
+                    <span class="text-center m-0 p-0 cs-light-black bold">
+                        <p class="m-0 p-0" id="u_project"></p>
+                        <p class="m-0 p-0">Projects</p>
+                    </span>
+                    <span class="text-center m-0 p-0 cs-light-black bold">
+                        <p class="m-0 p-0" id="u_cert">2</p>
+                        <p class="m-0 p-0">Certificates</p>
+                    </span>
+                    <span class="text-center m-0 p-0 cs-light-black bold">
+                        <p class="m-0 p-0" id="u_skill">2</p>
+                        <p class="m-0 p-0">Skills</p>
+                    </span>
+                </div>
+
+                <div class="mt-3 w-100 d-flex bs-light-orange" style="height: 50px; gap: 10px;">
+                    <div class="sel h-100 w-100 d-flex justify-content-center align-items-center pointer selectedField" id="selpost">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                            <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                        </svg>
+                    </div>
+                    <div class="sel h-100 w-100 d-flex justify-content-center align-items-center pointer" id="selcert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                            <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                        </svg>
+                    </div>
+                    <div class="sel h-100 w-100 d-flex justify-content-center align-items-center pointer" id="selskill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="userpost w-100 p-1">
+                    <div class="card-post d-flex my-2 px-0 w-100">
+                        <div class="cp-left d-flex justify-content-center align-items-center cs-orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                                <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                            </svg>
+                        </div>
+    
+                        <div class="cp-right px-2 cs-black py-1">
+                            <h4 class="bold poppins ">
+                                Menjadi Bahagia
+                            </h4>
+                            <p class="poppins desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eveniet pariatur doloribus
+                            </p>
+
+                            <a href="" class="cs-black bold">
+                                More Info
+                            </a>
+                            
+                        </div>
+    
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger close-expand" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <footer class="w-100 py-4 flex-shrink-0 bs-black position-relative overflow-hidden">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="position-absolute" style="margin: -1px; top: 0px;">
@@ -212,7 +287,9 @@
         </div>
     </footer>
 
-    <script src="js/navbar.js"></script>
-    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <script src="../js/navbar.js"></script>
+
+    <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <script src="../js/util/parse.js"></script>
 </body>
 </html>

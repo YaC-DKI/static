@@ -10,10 +10,6 @@
     background-position: 54%;
 }
 
-#greet-p .darken{
-    opacity: .6;
-}
-
 .partner{
     border: 2px solid rgba(37, 53, 70, 0.511);
     min-height: 100px;

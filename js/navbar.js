@@ -48,6 +48,7 @@ const aLinkList = document.getElementsByClassName("a-link");
 
 Array.from(aLinkList).forEach((v) => {
     v.addEventListener("click", function(e){
+        console.log("here")
         e.preventDefault()
 
         toggleGordeng();
@@ -66,7 +67,9 @@ const gordengH1 = document.getElementById("gordengText");
 
 function toggleGordeng(isInit=false){
     if(isInit){
-        document.querySelector("body").style = "overflow-y: hidden;"
+
+        document.querySelector("body").style = "overflow-y: hidden;";
+
         setTimeout(()=>{
             gordengH1.style = "opacity: 0; transition: 1.8s;"
             gordeng.style = "height:0px !important; transition: 1.6s;"
