@@ -31,8 +31,10 @@
     font-size: 4rem;
     letter-spacing: 3px;
 }
+
 #greet_tc{
     position: relative !important;
+    font-size: 1.4em;
     bottom: 10px;
 }
 
@@ -134,9 +136,13 @@
 }
 
 .line{
-    width: 100px;
-    height: 8px;
-    background: var(--orange);
+    gap: 10px;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border: 4px solid var(--orange);
 }
 
 .blank{

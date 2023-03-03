@@ -25,23 +25,23 @@
             <div class="breath"></div>
         </h1>
     </div>
-    <nav class="nav fixed-top" id="nav">
+    <nav class="nav fixed-top custom" id="nav">
         <div class="d-flex justify-content-between p-2" id="nav_main">
             <div class="d-flex align-items-center" id="left">
-                <a class="poppins bold m-0 cs-white g-content hovered" href="index.html">
+                <a class="poppins bold m-0 c-script cs-black g-content hovered" href="index.html">
                     D<span class="cs-orange p-0 m-0">KU</span>
                 </a>
             </div>
 
             <div class="d-flex align-items-center" id="center">
-                <a id="home" class="a-link poppins m-0 pop-600 cs-white g-content" href="index.html">
+                <a id="home" class="a-link cs-black c-script poppins m-0 pop-600 cs-black g-content" href="index.html">
                     Home
                     <span class="current"></span>
                 </a>
-                <a id="people" class="a-link poppins m-0 pop-600 cs-white g-content hovered" href="people.html">
+                <a id="people" class="a-link cs-black c-script poppins m-0 pop-600 cs-black g-content hovered" href="people.html">
                     People
                 </a>
-                <a id="job" class="a-link poppins m-0 pop-600 cs-white g-content hovered" href="job.html">
+                <a id="job" class="a-link cs-black c-script poppins m-0 pop-600 cs-black g-content hovered" href="job.html">
                     Job
                 </a>
             </div>
@@ -49,8 +49,8 @@
             <div class="d-flex align-items-center g-content justify-content-end" id="right">
                 <img src="Assets/26_logo.png" alt="logo" width="30">
                 
-                <div class="d-flex h-100 align-items-center position-relative z-3 pointer" id="toggle_extend" onclick="expander()">
-                    <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list d-block" viewBox="0 0 16 16">
+                <div class="d-flex h-100 align-items-center position-relative z-3 pointer " id="toggle_extend" onclick="expander()">
+                    <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-list d-block" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
 
@@ -82,9 +82,9 @@
     <main class="pt-0">
         <section class="greetings" id="greetings">
             
-            <div id="CarouselGreet" class="carousel slide" data-bs-ride="carousel">
+            <div id="CarouselGreet" class="carousel slide position-relative z-2"  data-bs-ride="carousel">
 
-                <div class="darken position-absolute z-1 w-100 bs-black w-100 h-100"></div>
+                <!-- <div class="darken position-absolute z-1 w-100 bs-black w-100 h-100"></div> -->
 
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#CarouselGreet" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -94,33 +94,33 @@
 
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="Assets/Home/Gedung.jpg" class="d-block w-100" alt="...">
+                    <img src="Assets/Home/Landing/Property 1=Frame 23.png" class="d-block w-100" alt="...">
 
                     <div class="p-4 carousel-caption h-100 d-flex justify-content-end align-items-start flex-column z-1" id="greet-content">
-                        <h1 class="cs-light-orange bebas p-0 m-0" id="greet_t">Belajar</h1>
-                        <p class="p-0 m-0" id="greet_tc">
+                        <h1 class="cs-light-black bebas p-0 m-0" id="greet_t">Belajar</h1>
+                        <p class="p-0 m-0 cs-light-black bold" id="greet_tc">
                             Persiapkan Semua Dengan Mempelajari Banyak Hal
                         </p>
                     </div>
 
                   </div>
                   <div class="carousel-item">
-                    <img src="./Assets/Home/Landing2.png" class="d-block w-100" alt="...">
+                    <img src="./Assets/Home/Landing/Property 1=Frame 24.png" class="d-block w-100" alt="...">
 
                     <div class="p-4 carousel-caption h-100 d-flex justify-content-end align-items-start flex-column z-1" id="greet-content">
-                        <h1 class="cs-light-orange bebas p-0 m-0" id="greet_t">Bekerja</h1>
-                        <p class="p-0 m-0" id="greet_tc">
+                        <h1 class="cs-light-black bebas p-0 m-0" id="greet_t">Bekerja</h1>
+                        <p class="p-0 m-0 cs-black bold" id="greet_tc">
                             Kerjakan Apa yang Ada Dengan Maksimal
                         </p>
                     </div>
 
                   </div>
                   <div class="carousel-item">
-                    <img src="Assets/Home/Gedung.jpg" class="d-block w-100" alt="...">
+                    <img src="Assets/Home/Landing/Property 1=Frame 25.png" class="d-block w-100" alt="...">
 
                     <div class="p-4 carousel-caption h-100 d-flex justify-content-end align-items-start flex-column z-1" id="greet-content">
-                        <h1 class="cs-light-orange bebas p-0 m-0" id="greet_t">Membangun</h1>
-                        <p class="p-0 m-0" id="greet_tc">
+                        <h1 class="cs-light-black bebas p-0 m-0" id="greet_t">Membangun</h1>
+                        <p class="p-0 m-0 cs-light-black bold" id="greet_tc">
                             Implementasikan Semua Demi Memajukan Bangsa dan Negara
                         </p>
                     </div>
@@ -306,15 +306,20 @@
         
         <section class="w-100 p-5 position-relative z-1 bs-black overflow-hidden mt-5 ">
             <div class="container-md h-100 d-flex justify-content-evenly mt-5" id="mawrap">
-                <div class="tside poppins d-flex flex-column" data-aos="fade-right">
-                    <h1 class="cs-white bold">
+                <div class="tside poppins d-flex flex-column position-relative" data-aos="fade-right">
+                    
+                    <h1 class="cs-white bold position-relative z-1">
                         Mata Pelajaran Pada <span class="cs-orange">SIJA</span>
                     </h1>
-                    <p class="cs-white mt-3 fs-5">
+                    <p class="cs-white mt-3 fs-5 position-relative z-1">
                         Berikut merupakan list mata pelajaran yang ada pada jurusan SIJA. Mata Pelajaran ini menjadi pedoman dasar dalam eksplorasi teknologi masa kini dan mendatang
                     </p>
 
-                    <div class="line"></div>
+                    <div class="line py-2 d-flex mt-3">
+                        <div class="circle rounded-circle bs-light-orange"></div>
+                        <div class="circle rounded-circle bs-light-orange"></div>
+                        <div class="circle rounded-circle bs-light-orange"></div>
+                    </div>
                 </div>
                 <div class="swiper mySwiper mx-5" data-aos="fade-left">
                     <div class="swiper-wrapper">
@@ -547,6 +552,7 @@
         </div>
     </footer>
 
+    <script src="js/job.js" ></script>
     <script src="./js/swiper.js"></script>
     <script src="js/navbar.js"></script>
     <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
