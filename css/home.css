@@ -1,8 +1,7 @@
 /* greet */
 
 .greet{
-    height: 100vh;
-    max-height: 768px;
+    height: 100vh !important;
 }
 
 .greetText{
@@ -10,7 +9,7 @@
 }
 
 .carousel-inner div img, #CarouselGreet{
-    max-height: 768px !important;
+    height: 100vh !important;
     min-height: 500px;
     object-fit: cover;
 }
@@ -38,3 +37,170 @@
 }
 
 /* greetings */
+
+.upper_side{
+    max-width: 390px;
+}
+
+.upper_side p{
+    font-weight: 600;
+}
+
+.bottom_side{
+    gap: 60px;
+}
+
+
+.bside-content img{
+    width: 80%;
+}
+
+
+
+.c-card{
+    max-width: 360px;
+    width: 100%;
+    height: 540px;
+    max-height: 540px;
+    background-image: url("../Assets/Home/card_texture.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 54%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.c-card img{
+    width: 90%;
+}
+
+.quotes{
+    max-width: 900px;
+}
+
+.quotes h1{
+    font-weight: 500;
+}
+
+.lamp{
+    width: 80px !important;
+    height: 80px !important;
+}
+
+@media screen and (max-width: 450px){
+    .bottom_side{
+        gap: 0px !important;
+        width: 90%;
+    }
+
+    .bside-content img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .bside-content h4{
+        font-size: 1em !important;
+    }
+    .c-card{
+        width: 90%;
+    }
+    #con-champ{
+        padding: 0px !important;
+    }
+}
+
+.swiper-wrapper{
+    max-width: 400px;
+}
+
+.swiper{
+    width: 310px;
+    height: 400px;
+    
+}
+
+.swiper-slide{
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 54%;
+    overflow: hidden;
+    /* border: 2px solid var(--orange); */
+}
+
+.tside{
+    max-width: 380px;
+}
+
+.line{
+    width: 100px;
+    height: 8px;
+    background: var(--orange);
+}
+
+.blank{
+    top: 0px;
+    background: var(--light-orange);
+    opacity: .7;
+}
+
+.sw-t p{
+    font-weight: 600;
+}
+
+.underline{
+    text-decoration: underline var(--light-black);
+}
+
+#g1{
+    background-image: url("../Assets/Home/matpel/DDG.png");
+}
+#g2{
+    background-image: url("../Assets/Home/matpel/KomputerJaringan.png");
+}
+#g3{
+    background-image: url("../Assets/Home/matpel/pemdas.png");
+}
+#g4{
+    background-image: url("../Assets/Home/matpel/siskom.png");
+}
+#g5{
+    background-image: url("../Assets/Home/matpel/siot.png");
+}
+#g6{
+    background-image: url("../Assets/Home/matpel/skj.png");
+}
+#g7{
+    background-image: url("../Assets/Home/matpel/saas.png");
+}
+#g8{
+    background-image: url("../Assets/Home/matpel/paas.png");
+}
+#g8{
+    background-image: url("../Assets/Home/matpel/paas.png");
+}
+#g9{
+    background-image: url("../Assets/Home/matpel/iaas.png");
+}
+
+
+@media screen and (max-width: 754px) {
+    #mawrap{
+        flex-direction: column-reverse !important;
+        justify-content: center I !important;
+        align-items: center !important;
+    }
+    .tside{
+        margin-top: 40px;
+        text-align: center !important;
+        align-items: center !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .swiper{
+        width: 95%;
+        max-height: 340px;
+    }
+}
