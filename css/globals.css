@@ -32,6 +32,10 @@
     -moz-box-shadow: -300px 120px 300px 350px rgba(233,160,30,0.21);
 }
 
+.input-group button:hover{
+    background: var(--light-orange);
+}
+
 
 /* color-related */
 .cs-black{
